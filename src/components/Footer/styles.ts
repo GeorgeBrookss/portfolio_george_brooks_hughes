@@ -10,8 +10,16 @@ export const FooterStyled = styled.footer`
   height: 443px;
   width: 1471px;
   @media ((min-width: 320px) and (max-width: 767px)) {
-    width: 300px;
+    width: 98%;
     height: 400px;
+    background-size: contain;
+    background-image: url(${FooterMobBack});
+  }
+
+  @media (max-width: 768px) {
+    max-width: 750px;
+    background-size: contain;
+    background-image: url(${FooterBack});
   }
 
   h2 {
@@ -32,11 +40,6 @@ export const FooterStyled = styled.footer`
     }
   }
 
-  @media (max-width: 768px) {
-    max-width: 750px;
-    background-size: contain;
-    background-image: url(${FooterMobBack});
-  }
   ul {
     display: flex;
     list-style: none;
@@ -47,9 +50,10 @@ export const FooterStyled = styled.footer`
       max-width: 300px;
       display: flex;
       max-width: 200px;
+      margin: 90%;
     }
     @media (max-width: 768px) {
-      margin: 0;
+      margin-top: 70px;
       margin-right: 100px;
       padding: 0;
     }

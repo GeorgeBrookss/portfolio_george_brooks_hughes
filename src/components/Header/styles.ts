@@ -12,10 +12,16 @@ export const HeaderStyled = styled.div`
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 0;
+
     @media (max-width: 768px) {
       max-width: 650px;
       font-size: 28px;
       margin-left: 65px;
+    }
+
+    @media ((min-width: 320px) and (max-width: 767px)) {
+      font-size: 18px;
+      margin-left: 10px;
     }
 
     span {
@@ -29,6 +35,7 @@ export const NavStyled = styled.nav`
   width: 1472px;
   display: flex;
   background-repeat: no-repeat;
+
   @media ((min-width: 320px) and (max-width: 767px)) {
     width: 300px;
     max-height: 200px;

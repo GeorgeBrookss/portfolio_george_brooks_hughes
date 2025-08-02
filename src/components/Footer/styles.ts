@@ -20,7 +20,7 @@ export const FooterStyled = styled.footer`
     margin: 0 auto;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     max-width: 750px;
     background-size: contain;
     background-image: url(${FooterBack});
@@ -58,14 +58,14 @@ export const FooterStyled = styled.footer`
       max-width: 200px;
       margin-right: 150px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 800px) {
       margin-top: 70px;
       margin-right: 100px;
       padding: 0;
     }
     li {
       margin-left: 20px;
-      margin-top: 160px;
+      margin-top: 162px;
 
       @media (max-width: 768px) {
         margin-top: 55px;

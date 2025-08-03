@@ -11,6 +11,13 @@ const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+
+    @media ((min-width: 320px) and (max-width: 767px)) {
+    overflow-x: hidden;
+      max-width: 80%;
+
+  }
+
   }
 `
 

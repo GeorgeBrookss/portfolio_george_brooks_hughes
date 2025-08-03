@@ -62,23 +62,23 @@ export const SectContainer = styled.div`
   margin-bottom: 129px;
 `
 export const ProjectList = styled.ul`
-  width: 100%;
   margin: 0 auto;
   justify-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
   list-style: none;
+  max-width: 80%;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1780px) {
     grid-template-columns: 1fr 1fr;
-    min-width: 600px;
     margin-left: 0;
     padding: 0;
+    max-width: 80%;
   }
-  @media ((min-width: 320px) and (max-width: 767px)) {
+  @media ((min-width: 320px) and (max-width: 1024px)) {
     grid-template-columns: 1fr;
-    max-width: 200px;
+    max-width: 100vh;
   }
 `
 export const ProjectCard = styled.li`

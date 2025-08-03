@@ -2,22 +2,26 @@ import styled from 'styled-components'
 import FooterBack from '../../images/footerBackground.png'
 import FooterMobBack from '../../images/mobileFooter.png'
 
+export const FooterContaner = styled.div`
+  max-width: 100%;
+`
+
 export const FooterStyled = styled.footer`
   margin-top: 247px;
   margin: 0 auto;
   background-image: url(${FooterBack});
   background-repeat: no-repeat;
   height: 443px;
-  width: 1471px;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  object-fit: cover;
   @media ((min-width: 320px) and (max-width: 767px)) {
-    margin-right: 120px;
     height: 120px;
     background-size: contain;
+    background-position: center center;
     background-image: url(${FooterMobBack});
-    max-width: 720px;
-    min-width: 300px;
-    width: 100%;
-    margin: 0 auto;
+    min-width: 100vw;
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -35,8 +39,10 @@ export const FooterStyled = styled.footer`
     font-size: 40px;
     font-weight: 250;
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       font-size: 25px;
+      margin-left: 220px;
+      height: fit-content;
     }
 
     @media ((min-width: 320px) and (max-width: 767px)) {
@@ -49,7 +55,8 @@ export const FooterStyled = styled.footer`
     display: flex;
     list-style: none;
     justify-self: center;
-    margin-right: 50px;
+    margin-right: 130px;
+    padding-top: 200px;
 
     @media ((min-width: 320px) and (max-width: 767px)) {
       padding-top: 0;
@@ -60,15 +67,33 @@ export const FooterStyled = styled.footer`
     }
     @media (min-width: 768px) and (max-width: 800px) {
       margin-top: 70px;
-      margin-right: 100px;
+      margin-right: 140px;
+      padding: 0;
+    }
+    @media (min-width: 800px) and (max-width: 1024px) {
+      margin-top: 70px;
+      margin-right: 200px;
       padding: 0;
     }
     li {
       margin-left: 20px;
       margin-top: 162px;
+      padding-top: 160px;
 
-      @media (max-width: 768px) {
+      @media (min-width: 320px) {
+        padding-top: 50px;
+        margin-left: 30px;
+        margin-top: 0;
+      }
+
+      @media (min-width: 768px) and (max-width: 799px) {
         margin-top: 55px;
+        font-size: 24px;
+        margin-top: 90px;
+      }
+      @media (min-width: 800px) and (max-width: 1024px) {
+        margin-top: 90px;
+        margin-left: 55px;
       }
 
       .gradient {
@@ -95,18 +120,22 @@ export const FooterStyled = styled.footer`
         background-clip: text;
         color: transparent;
       }
-      @media (max-width: 768px) {
-        font-size: 24px;
-        margin-top: 0;
-      }
       a {
         text-decoration: none;
         margin-right: 5px;
-        font-size: 28px;
+        font-size: 48px;
 
-        @media (max-width: 768px) {
+        @media (min-width: 800px) and (max-width: 1024px) {
+          margin-top: 55px;
+          background-color: red;
+          margin-top: 90px;
+          font-size: 20px;
+        }
+
+        @media (min-width: 768px) and (max-width: 799px) {
           font-size: 24px;
           margin-top: 0;
+          font-size: 24px;
         }
 
         @media ((min-width: 320px) and (max-width: 767px)) {

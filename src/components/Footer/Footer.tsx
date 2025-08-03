@@ -1,11 +1,8 @@
-import { FooterStyled } from './styles'
+import { FooterStyled, FooterContaner } from './styles'
 const Footer = () => (
   <>
-    <div>
+    <FooterContaner>
       <FooterStyled id="contatos">
-        <h2>
-          C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;O
-        </h2>
         <ul>
           <li>
             <a
@@ -44,7 +41,7 @@ const Footer = () => (
           </li>
         </ul>
       </FooterStyled>
-    </div>
+    </FooterContaner>
   </>
 )
 

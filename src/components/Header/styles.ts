@@ -32,17 +32,19 @@ export const HeaderStyled = styled.div`
 export const NavStyled = styled.nav`
   background-image: url(${Banner});
   height: 657px;
-  width: 1472px;
+  margin: 0 auto;
+  min-width: 100vw;
+  background-size: contain;
   display: flex;
   background-repeat: no-repeat;
 
   @media ((min-width: 320px) and (max-width: 767px)) {
-    width: 300px;
+    min-width: 100vw;
     max-height: 200px;
   }
 
   @media (max-width: 768px) {
-    max-width: 650px;
+    min-width: 100vw;
     background-size: contain;
     margin: 0 auto;
     height: 375px;
@@ -57,7 +59,7 @@ export const NavStyled = styled.nav`
       margin-top: 250px;
       max-height: 120px;
     }
-    @media ((min-width: 320px) and (max-width: 767px)) {
+    @media ((min-width: 320px) and (max-width: 766px)) {
       width: 300px;
       margin-top: 150px;
       margin-left: 0;
@@ -65,7 +67,7 @@ export const NavStyled = styled.nav`
 
     li {
       margin-left: 20px;
-      @media (max-width: 768px) {
+      @media (min-width: 768px) {
         font-size: 18px;
         margin: 5px;
         height: 100px;

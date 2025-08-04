@@ -7,7 +7,7 @@ import {
 import Separador from '../../images/separador.png'
 import Disney from '../../images/projetoDisney.png'
 import Efood from '../../images/projetoEfood.png'
-import Reikai from '../../images/projetoReikai.png'
+import Eplay from '../../images/projetoEplay.png'
 import YuyuBio from '../../images/projetoYuyuBio.png'
 import HamburgueriaZ from '../../images/projetoHamburgeriaZ.png'
 import ManualDeCS from '../../images/projetoManualCS.png'
@@ -57,17 +57,15 @@ const Section = () => {
                 </a>
               </ProjectCard>
               <ProjectCard>
-                <a
-                  href="https://landing-page-reikai-shokudo--teal.vercel.app/"
-                  target="blank"
-                >
+                <a href="https://eplay-jet.vercel.app/" target="blank">
                   <div className="overlay" />
                   <div>
-                    <img src={Reikai} alt="Projeto Reikai" />
-                    <h3>Restaurante Reikai Shokudo</h3>
+                    <img src={Eplay} alt="Projeto Eplay" />
+                    <h3>Eplay Loja de games</h3>
                     <p>
-                      Projeto acadêmico desenvolvido com a finalidade de aplicar
-                      API em um site de compras, baseado no Ifood
+                      Desenvolvido durante o curso técnico Fullstack, o projeto
+                      consiste em uma loja de games funcional e responsiva, os
+                      dados são adquiridos por meio de requisições a uma API.
                     </p>
                   </div>
                 </a>
@@ -82,8 +80,8 @@ const Section = () => {
                     <img src={Disney} alt="Projeto DisneyPlus" />
                     <h3>Landing page clone disney+</h3>
                     <p>
-                      Projeto acadêmico desenvolvido com a finalidade de aplicar
-                      API em um site de compras, baseado no Ifood
+                      Clone da landing page do Disney+, baseado no layout de
+                      2022, mantendo fidelidade e aplicando boas metodologias.
                     </p>
                   </div>
                 </a>
@@ -164,8 +162,9 @@ const Section = () => {
                     />
                     <h3>Manual de Cibersegurança</h3>
                     <p>
-                      Projeto acadêmico desenvolvido com a finalidade de aplicar
-                      API em um site de compras, baseado no Ifood
+                      Projeto de extensão desenvolvido na faculdade. Um
+                      aplicativo com o objetivo de conscientizar jovens e idosos
+                      sobre segurança no mundo digital.
                     </p>
                   </div>
                 </a>
@@ -180,8 +179,9 @@ const Section = () => {
                     <img src={HamburgueriaZ} alt="Projeto HamburgueriaZ" />
                     <h3>HamburgueriaZ</h3>
                     <p>
-                      Projeto acadêmico desenvolvido com a finalidade de aplicar
-                      API em um site de compras, baseado no Ifood
+                      Desenvolvimento de um Menu digital interativo mobile para
+                      um restaurante fictício, com função para enviar pedido
+                      personalizado via email.
                     </p>
                   </div>
                 </a>
@@ -196,8 +196,9 @@ const Section = () => {
                     <img src={YuyuBio} alt="Projeto Yuyu Hakusho Biografia" />
                     <h3>Yuyu Hakusho Biography</h3>
                     <p>
-                      Projeto acadêmico desenvolvido com a finalidade de aplicar
-                      API em um site de compras, baseado no Ifood
+                      Um aplicativo que contém a biografia dos personagens
+                      principais do anime Yuyu Hakusho, realizado com a
+                      finalidade de treinamento do desenvolvimento mobile.
                     </p>
                   </div>
                 </a>
